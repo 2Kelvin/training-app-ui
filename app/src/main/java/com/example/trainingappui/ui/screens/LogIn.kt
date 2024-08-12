@@ -25,6 +25,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.res.painterResource
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
@@ -37,7 +38,7 @@ fun LoginScreen(modifier: Modifier = Modifier) {
     Box(modifier = modifier.fillMaxSize()) {
         Image(
             painter = painterResource(R.drawable.pic_one),
-            contentDescription = "Woman training",
+            contentDescription = stringResource(R.string.woman_training),
             contentScale = ContentScale.FillHeight
         )
 
@@ -55,7 +56,7 @@ fun LoginScreen(modifier: Modifier = Modifier) {
             ) {
                 Image(
                     painter = painterResource(R.drawable.v_logo),
-                    contentDescription = "Logo",
+                    contentDescription = stringResource(R.string.logo),
                     modifier = Modifier.size(38.dp)
                 )
 
@@ -67,11 +68,12 @@ fun LoginScreen(modifier: Modifier = Modifier) {
                     onClick = {}
                 ) {
                     Text(
-                        text = "Skip".uppercase()
+                        text = stringResource(R.string.skip).uppercase(),
+                        fontWeight = FontWeight.Medium
                     )
                     Icon(
                         imageVector = Icons.AutoMirrored.Filled.KeyboardArrowRight,
-                        contentDescription = "Skip"
+                        contentDescription = stringResource(R.string.skip)
                     )
                 }
             }
@@ -79,14 +81,14 @@ fun LoginScreen(modifier: Modifier = Modifier) {
             // Supplements text
             Column(modifier = Modifier.fillMaxWidth()) {
                 Text(
-                    text = "Supplements",
+                    text = stringResource(R.string.supplements),
                     fontWeight = FontWeight.Bold,
                     color = Color.White,
                     fontSize = 28.sp,
                     modifier = Modifier.padding(bottom = 8.dp)
                 )
                 Text(
-                    text = "Workout plans designed to help you achieve your fitness goals whether it's losing weight or building muscle.",
+                    text = stringResource(R.string.workout_intro),
                     color = Color.White,
                 )
             }
@@ -103,7 +105,8 @@ fun LoginScreen(modifier: Modifier = Modifier) {
                     onClick = {}
                 ) {
                     Text(
-                        text = "Log In"
+                        text = stringResource(R.string.log_in),
+                        fontWeight = FontWeight.Medium
                     )
                 }
 
@@ -114,7 +117,8 @@ fun LoginScreen(modifier: Modifier = Modifier) {
                     onClick = {}
                 ) {
                     Text(
-                        text = "Sign Up"
+                        text = stringResource(R.string.sign_up),
+                        fontWeight = FontWeight.Medium
                     )
                 }
             }

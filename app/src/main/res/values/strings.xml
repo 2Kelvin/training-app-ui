@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">Training App UI</string>
+    <string name="workout_intro">Workout plans designed to help you achieve your fitness goals whether it\'s losing weight or building muscle.</string>
+    <string name="supplements">Supplements</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="log_in">Log In</string>
+    <string name="skip">Skip</string>
+    <string name="logo">Logo</string>
+    <string name="woman_training">Woman training</string>
 </resources>
