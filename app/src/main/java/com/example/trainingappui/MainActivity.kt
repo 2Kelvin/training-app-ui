@@ -18,7 +18,9 @@ class MainActivity : ComponentActivity() {
         enableEdgeToEdge()
         setContent {
             TrainingAppUITheme {
-                Scaffold(modifier = Modifier.background(MaterialTheme.colorScheme.background)) { innerPadding ->
+                Scaffold(
+                    modifier = Modifier.background(MaterialTheme.colorScheme.background)
+                ) { innerPadding ->
                     StoreScreen(
                         modifier = Modifier.padding(innerPadding)
                     )

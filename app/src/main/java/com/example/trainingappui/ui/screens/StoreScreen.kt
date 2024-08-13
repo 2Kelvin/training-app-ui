@@ -54,13 +54,11 @@ fun StoreScreen(modifier: Modifier = Modifier) {
                 Icon(
                     imageVector = Icons.Filled.Notifications,
                     contentDescription = stringResource(R.string.notification),
-                    tint = Color.Gray,
                     modifier = Modifier.padding(end = 16.dp)
                 )
                 Icon(
                     imageVector = Icons.Filled.Person,
                     contentDescription = stringResource(R.string.profile),
-                    tint = Color.Gray
                 )
             }
         }
