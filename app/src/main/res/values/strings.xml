@@ -7,4 +7,9 @@
     <string name="skip">Skip</string>
     <string name="logo">Logo</string>
     <string name="woman_training">Woman training</string>
+    <string name="training_plan">Training plan</string>
+    <string name="meal_plan">Meal plan</string>
+    <string name="supplement_plan">Supplement plan</string>
+    <string name="biceps_plan">Biceps plan</string>
+    <string name="legs_plan">Biceps plan</string>
 </resources>

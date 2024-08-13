@@ -9,7 +9,6 @@ import androidx.compose.ui.unit.sp
 import com.example.trainingappui.R
 
 val InterFont = FontFamily(
-    Font(R.font.inter_tight_light, FontWeight.Light),
     Font(R.font.inter_tight_regular, FontWeight.Normal),
     Font(R.font.inter_tight_medium, FontWeight.Medium),
     Font(R.font.inter_tight_semibold, FontWeight.SemiBold),
