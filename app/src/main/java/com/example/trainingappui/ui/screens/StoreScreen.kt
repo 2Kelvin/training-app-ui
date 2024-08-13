@@ -1,6 +1,7 @@
 package com.example.trainingappui.ui.screens
 
 import androidx.compose.foundation.Image
+import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
@@ -16,6 +17,7 @@ import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Notifications
 import androidx.compose.material.icons.filled.Person
 import androidx.compose.material3.Icon
+import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
@@ -29,6 +31,7 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import com.example.trainingappui.R
 import com.example.trainingappui.data.WorkOut
 import com.example.trainingappui.data.workoutPlans
 import com.example.trainingappui.ui.theme.TrainingAppUITheme
@@ -43,19 +46,20 @@ fun StoreScreen(modifier: Modifier = Modifier) {
         // top right icons
         Row(
             modifier = Modifier
-                .fillMaxWidth(),
+                .fillMaxWidth()
+                .padding(top = 4.dp, bottom = 8.dp),
             horizontalArrangement = Arrangement.End
         ) {
             Row(verticalAlignment = Alignment.CenterVertically) {
                 Icon(
                     imageVector = Icons.Filled.Notifications,
-                    contentDescription = "Notification",
+                    contentDescription = stringResource(R.string.notification),
                     tint = Color.Gray,
                     modifier = Modifier.padding(end = 16.dp)
                 )
                 Icon(
                     imageVector = Icons.Filled.Person,
-                    contentDescription = "Profile",
+                    contentDescription = stringResource(R.string.profile),
                     tint = Color.Gray
                 )
             }
@@ -69,9 +73,9 @@ fun StoreScreen(modifier: Modifier = Modifier) {
             verticalArrangement = Arrangement.spacedBy(24.dp)
         ) {
             Text(
-                text = "Store",
+                text = stringResource(R.string.store),
                 fontWeight = FontWeight.Bold,
-                fontSize = 28.sp
+                fontSize = 32.sp
             )
             LazyColumn(verticalArrangement = Arrangement.spacedBy(16.dp)) {
                 items(workoutPlans) {
@@ -108,7 +112,7 @@ fun TrainingPlanCard(workOutPlan: WorkOut, modifier: Modifier = Modifier) {
 }
 
 
-@Preview(showBackground = true)
+@Preview(showBackground = true, showSystemUi = true)
 @Composable
 fun StoreScreenPreview() {
     TrainingAppUITheme {

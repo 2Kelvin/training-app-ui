@@ -10,9 +10,9 @@ data class WorkOut (
 )
 
 val workoutPlans = listOf(
-    WorkOut(R.string.training_plan, R.drawable.pic_two),
-    WorkOut(R.string.meal_plan, R.drawable.pic_one),
-    WorkOut(R.string.supplement_plan, R.drawable.pic_two),
-    WorkOut(R.string.biceps_plan, R.drawable.pic_one),
-    WorkOut(R.string.legs_plan, R.drawable.pic_two),
+    WorkOut(R.string.training_plan, R.drawable.pic_five),
+    WorkOut(R.string.meal_plan, R.drawable.pic_three),
+    WorkOut(R.string.supplement_plan, R.drawable.pic_four),
+    WorkOut(R.string.biceps_plan, R.drawable.pic_two),
+    WorkOut(R.string.legs_plan, R.drawable.pic_one),
 )

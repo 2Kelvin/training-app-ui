@@ -4,7 +4,12 @@ import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
-import com.example.trainingappui.ui.screens.LoginScreen
+import androidx.compose.foundation.background
+import androidx.compose.foundation.layout.padding
+import androidx.compose.material3.MaterialTheme
+import androidx.compose.material3.Scaffold
+import androidx.compose.ui.Modifier
+import com.example.trainingappui.ui.screens.StoreScreen
 import com.example.trainingappui.ui.theme.TrainingAppUITheme
 
 class MainActivity : ComponentActivity() {
@@ -13,7 +18,11 @@ class MainActivity : ComponentActivity() {
         enableEdgeToEdge()
         setContent {
             TrainingAppUITheme {
-                LoginScreen()
+                Scaffold(modifier = Modifier.background(MaterialTheme.colorScheme.background)) { innerPadding ->
+                    StoreScreen(
+                        modifier = Modifier.padding(innerPadding)
+                    )
+                }
             }
         }
     }

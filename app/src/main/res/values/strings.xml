@@ -12,4 +12,7 @@
     <string name="supplement_plan">Supplement plan</string>
     <string name="biceps_plan">Biceps plan</string>
     <string name="legs_plan">Biceps plan</string>
+    <string name="store">Store</string>
+    <string name="notification">Notification</string>
+    <string name="profile">Profile</string>
 </resources>
